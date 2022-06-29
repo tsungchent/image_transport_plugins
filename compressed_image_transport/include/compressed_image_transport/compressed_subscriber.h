@@ -62,12 +62,14 @@ protected:
       const Callback& callback,
       rmw_qos_profile_t custom_qos) override;
 
+/*
   void subscribeImpl(
       rclcpp::Node * ,
       const std::string& base_topic,
       const Callback& callback,
       rmw_qos_profile_t custom_qos,
       rclcpp::SubscriptionOptions options) override;
+*/
 
   void internalCallback(const sensor_msgs::msg::CompressedImage::ConstSharedPtr& message,
                         const Callback& user_cb) override;
